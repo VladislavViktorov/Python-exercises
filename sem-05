@@ -1,1 +1,7 @@
-
+class MissingParameterError(Exception):
+    pass
+class InvalidParameterError:
+    def __init__(self, name, *args):
+        message = f"Invalid class parameter: {name}"
+class InvalidAgeError:
+    def __init__(self,):
